@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Био товары222</title>
+
+    <style>
+        body {
+            background: url(https://hdqwalls.com/download/green-grass-field-1920x1080.jpg);  /*общий фон*/  https://hdqwalls.com/download/green-grass-field-3840x2160.jpg
+        }
+
+
+
+        #navbar ul{
+            display: none;
+            background-color: rgba(52, 128, 13, 0.25); /*цвет раскрывающегося меню*/
+            position: absolute;
+            top: 100%;
+        }
+        #navbar li:hover ul { display: inline-block; } /*делает меню раскрывающимся*/
+        #navbar, #navbar ul{  /*делает раскрывающеесяменю по центру*/
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+
+            border: 2px solid rgba(23, 167, 131, 0.22);
+            border-radius: 10px 25px; /*закругление краев меню*/
+            width: 190px; /*длина строки меню*/
+
+        }
+        #navbar { /* полоска меню*/
+            height: 50px;  /*высота полоски*/
+            background-color: rgba(81, 255, 188, 0.28); /*цвет строки меню*/
+            padding-left: 25px; /*отступ меню от начала строки*/
+            min-width: 4700px; /*длина полоски меню*/
+        }
+
+        #navbar li {
+            float: left;
+            position: relative;
+            height: 100%; /* длина раскрывающегося списка*/
+        }
+        #navbar li a {
+            display: block;
+            padding: 10px; /* межстрочный интервал*/
+            width: 100px;  /* растяжение юлоков меню по строке*/
+            color: #fff; /*цыет шрифта*/
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.5em; /* 30px/16=1.875em */
+        }
+        #navbar a:hover {              /*изменения цвета меню при наведении курсора + цветовая полоска*/
+            background-color: rgba(41, 102, 13, 0.3);
+            border-left: 6px solid rgba(248, 255, 32, 0.31);
+        }
+
+        h1{
+            font-size: 4.5em; /* 40px/16=2.5em */  /*размир шрифта h1*/
+            color: rgb(0, 0, 0);
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="front"
+     style="background-image: url(https://images7.alphacoders.com/352/thumb-1920-352686.jpg)"> <!--верхняя полоска + текст на ней-->
+    <center> <h1 class="text-shadow">Эко-продукция</h1> </center>
+</div>
+
+<ul id="navbar">
+    <li><a href="#">Главная</a></li>
+    <li><a href="#">Новости</a></li>
+    <li><a href="#">Контакты</a>
+        <ul class="b">
+            <li><a href="#">Адрес</a></li>
+            <li><a href="#">Телефон</a></li>
+            <li><a href="#">Email</a></li>
+        </ul>
+    </li>
+    <li><a href="#">О нас</a></li>
+</ul>
+
+
+
+</body>
+</html>
